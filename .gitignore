@@ -1,1 +1,3 @@
 *.csv
+data/csv/play_by_play.csv
+data/nba.sqlite
