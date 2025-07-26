@@ -1,0 +1,92 @@
+[0m13:47:13.381848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D9F433770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D9D440CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DA18ABC50>]}
+
+
+============================== 13:47:13.408345 | 141c7a58-9a32-4518-9e51-cb26a32fed02 ==============================
+[0m13:47:13.408345 [info ] [MainThread]: Running with dbt=1.10.5
+[0m13:47:13.408910 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\alexa\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:47:13.483000 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\alexa\.dbt
+[0m13:47:35.193369 [debug] [MainThread]: Starter project path: C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\include\starter_project
+[0m13:47:35.220930 [info ] [MainThread]: 
+Your new dbt project "league_scouting_fork" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:47:35.221879 [info ] [MainThread]: Setting up your profile.
+[0m13:47:46.335148 [error] [MainThread]: Encountered an error:
+
+[0m13:47:46.340250 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\cli\requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:47:46.344192 [debug] [MainThread]: Command `dbt init` failed at 13:47:46.343962 after 33.09 seconds
+[0m13:47:46.344965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DA193E9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DA1917D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022DA190D040>]}
+[0m13:47:46.347237 [debug] [MainThread]: Flushing usage events
+[0m13:47:46.746094 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:01.126383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3ED3B0440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3EE217ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3EE217B10>]}
+
+
+============================== 13:48:01.130699 | aa8fc82d-1fb1-40e6-9291-2cdebf1ddc13 ==============================
+[0m13:48:01.130699 [info ] [MainThread]: Running with dbt=1.10.5
+[0m13:48:01.131549 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\alexa\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:48:13.856678 [info ] [MainThread]: A project called league_scouting_platform_test already exists here.
+[0m13:48:13.859437 [debug] [MainThread]: Command `dbt init` succeeded at 13:48:13.859132 after 13.05 seconds
+[0m13:48:13.860060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3EE2B49D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3EF2F8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3EE114490>]}
+[0m13:48:13.860755 [debug] [MainThread]: Flushing usage events
+[0m13:48:14.237087 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:48:24.513583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA07A20440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA08887ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA08887B10>]}
+
+
+============================== 13:48:24.517220 | 6ec964f1-5587-4447-8bfa-60f8d1ac0216 ==============================
+[0m13:48:24.517220 [info ] [MainThread]: Running with dbt=1.10.5
+[0m13:48:24.518556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\alexa\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:48:38.947433 [debug] [MainThread]: Starter project path: C:\Users\alexa\AppData\Local\pypoetry\Cache\virtualenvs\league-scouting-platform-test-OIkqqpFv-py3.13\Lib\site-packages\dbt\include\starter_project
+[0m13:48:38.966098 [info ] [MainThread]: 
+Your new dbt project "league_scouting_fork" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:48:38.967010 [info ] [MainThread]: Setting up your profile.
+[0m14:05:46.999533 [info ] [MainThread]: Profile league_scouting_fork written to C:\Users\alexa\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:05:47.003215 [debug] [MainThread]: Command `dbt init` succeeded at 14:05:47.002925 after 1042.65 seconds
+[0m14:05:47.003940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA42E86060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA09CB8CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA42E71590>]}
+[0m14:05:47.004668 [debug] [MainThread]: Flushing usage events
+[0m14:05:47.398385 [debug] [MainThread]: An error was encountered while trying to flush usage events

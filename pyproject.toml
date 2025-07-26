@@ -1,24 +1,24 @@
-[project]
+[tool.poetry]
 name = "league-scouting-platform-test"
 version = "0.1.0"
 description = "Test GLEAGUE"
-authors = [
-    {name = "Alex J"}
-]
-license = {text = "MIT"}
+authors = ["Alex J"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "pandas (>=2.3.1,<3.0.0)",
-    "google-cloud-bigquery (>=3.35.1,<4.0.0)",
-    "pandas-gbq (>=0.29.2,<0.30.0)",
-    "pyarrow (>=21.0.0,<22.0.0)",
-    "kaggle (>=1.7.4.5,<2.0.0.0)",
-    "dbt-bigquery (>=1.10.0,<2.0.0)",
-    "dbt-core (>=1.10.5,<2.0.0)"
+packages = [
+    { include = "league_scouting_platform_test" }
 ]
 
+[tool.poetry.dependencies]
+python = ">=3.13"
+pandas = "^2.3.1"
+google-cloud-bigquery = "^3.35.1"
+pandas-gbq = "^0.29.2"
+pyarrow = "^21.0.0"
+kaggle = "^1.7.4"
+dbt-bigquery = "^1.10.0"
+dbt-core = "^1.10.5"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
